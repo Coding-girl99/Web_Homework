@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人信息卡片</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="card-container">
+    <h1>个人信息卡片</h1>
+    <div class="card">
+      <!-- 头像 -->
+      <div class="photo-container">
+        <img id="photo" src="./imgs/default_img.jpg" alt="头像" title="点击更换头像">
+        <input type="file" id="photo-upload" accept="image/*">
+      </div>
+      <!-- 姓名 -->
+      <div class="field">
+        <label for="name">姓名</label>
+        <input type="text" id="name" placeholder="请输入姓名...">
+      </div>
+      <!-- 个人简介 -->
+      <div class="field">
+        <label for="info">个人简介</label>
+        <textarea id="info" placeholder="请输入个人简介..."></textarea>
+      </div>
+      <!-- 保存按钮 -->
+      <button id="save-btn">保存</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
